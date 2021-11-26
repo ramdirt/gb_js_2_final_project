@@ -1,0 +1,139 @@
+.header-nav {
+    background-color: $color-black;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header-nav__blocks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.header-nav__right {
+    position: relative;
+}
+
+.header-nav__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $tablet-width) {
+        flex-direction: row-reverse;
+    }
+}
+
+.header-nav__list_logo-search {
+    @media (max-width: $tablet-width) {
+        flex-direction: row;
+    }
+}
+.header-nav__logo {
+    &:hover {
+        cursor: pointer;
+        transition: 0.3s;
+        transform: rotate(-10deg);
+    }
+}
+
+.header-nav__list li {
+    display: inline;
+}
+.header-nav__item img {
+    width: 90%;
+    height: 90%;
+    cursor: pointer;
+}
+.header-nav__item {
+    position: relative;
+}
+.header-nav__item_login,
+.header-nav__item_basket {
+    @media (max-width: $tablet-width) {
+        visibility: hidden;
+    }
+}
+
+.header-nav__logo,
+.header-nav__search {
+    padding-right: 20px;
+}
+
+.burger,
+.header-nav__item_login,
+.header-nav__item_basket {
+    padding-left: 20px;
+}
+
+
+
+
+.sidebar {
+    background-color: $color-white;
+    width: 200px;
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    padding: 0px 16px 10px 33px;
+    min-height: 758px;
+    
+    transform-origin: top right;
+    transition: 0.5s;
+    z-index: 2;
+
+    @media (max-width: $tablet-width) {
+        width: 100%;
+        height: 100vh;
+        padding: 0px;
+    }
+
+    &--open {
+        opacity: 1;
+        transform: scaleY(1);
+        box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    }
+
+    &--close {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+}
+.sidebar__wrap {
+    width: 190px;
+    margin: 0 auto;
+
+    @media (max-width: $tablet-width) {
+        width: 300px;
+        height: 100vh;
+    }
+}
+.sidebar__exit {
+    margin-top: 16px;
+    text-align: end;
+    cursor: pointer;
+}
+.sidebar__title {
+    margin-top: 9px;
+    font-weight: 600;
+}
+.sidebar__list {
+    margin-right: 63px;
+}
+.sidebar__list-title p {
+    margin-top: 24px;
+    color: $color-pink;
+    font-size: 14px;
+}
+.sidebar__list-items {
+    padding-left: 21px;
+    list-style-type: none;
+}
+.sidebar__list-item {
+    margin-top: 12px;
+    color: #6F6E6E;
+}
