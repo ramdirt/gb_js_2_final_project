@@ -458,7 +458,7 @@ input[type="checkbox"]:checked + label:after {
   background-color: #f16d7f;
   -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-  opacity: 80%;
+  opacity: 100%;
 }
 
 .card__btn:focus {

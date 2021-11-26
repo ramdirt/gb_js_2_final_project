@@ -1,0 +1,22 @@
+{
+  "name": "pro-js-final-project",
+  "version": "0.0.1",
+  "description": "My first create internet shop",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramdirt/pro-js-final-project.git"
+  },
+  "author": "Reznikov Aleksey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramdirt/pro-js-final-project/issues"
+  },
+  "homepage": "https://github.com/ramdirt/pro-js-final-project#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
