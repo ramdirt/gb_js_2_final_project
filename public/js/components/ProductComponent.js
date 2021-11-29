@@ -14,7 +14,7 @@ Vue.component('products', {
                     this.$data.products.push(item);
                     this.$data.filtered.push(item);
                 }
-            });
+        });
     },
     methods: {
         filter(userSearch){

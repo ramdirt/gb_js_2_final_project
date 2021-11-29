@@ -581,8 +581,7 @@ input[type="checkbox"]:checked + label:after {
 }
 
 @media (max-width: 768px) {
-  .header-nav__item_login,
-  .header-nav__item_basket {
+  .header-nav__item_login {
     visibility: hidden;
   }
 }
@@ -596,6 +595,14 @@ input[type="checkbox"]:checked + label:after {
 .header-nav__item_login,
 .header-nav__item_basket {
   padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .burger,
+  .header-nav__item_login,
+  .header-nav__item_basket {
+    padding-left: 0px;
+  }
 }
 
 .sidebar {
@@ -1066,7 +1073,78 @@ input[type="checkbox"]:checked + label:after {
   height: 15px;
 }
 
-/* */
+/* корзина в шапке */
+.basket_btn-open {
+  border: none;
+  background-color: #222224;
+}
+
+.basket_container {
+  position: absolute;
+  top: 52px;
+  right: 0px;
+  z-index: 3;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.basket_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.basket_item-content {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.basket_item-name {
+  font-weight: 600;
+}
+
+.basket_item-quantity {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.basket_item-price {
+  font-size: 12px;
+}
+
+.basket_item-remove {
+  margin-top: 6px;
+  font-size: 14px;
+  background-color: #222224;
+  color: #fff;
+  border: none;
+  line-height: 20px;
+  padding: 0px 5px 0px 5px;
+  border-radius: 3px;
+  opacity: 30%;
+}
+
+.basket_item-remove:hover {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #f16d7f;
+  border-radius: 3px;
+  opacity: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2261,5 +2339,44 @@ input[type="checkbox"]:checked + label:after {
 .perks__item {
   padding-left: 22px;
   margin-bottom: 5px;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.btn-search {
+  background-color: transparent;
+  border: none;
+  color: #fafafa;
+  font-size: 14px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+
+.btn-search:hover {
+  cursor: pointer;
+}
+
+.search-form {
+  position: relative;
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.search-field:focus {
+  outline: none;
+}
+
+.search-field {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 200px;
+  color: #fafafa;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fafafa;
 }
 /*# sourceMappingURL=main.css.map */
