@@ -52,8 +52,7 @@
 .header-nav__item {
     position: relative;
 }
-.header-nav__item_login,
-.header-nav__item_basket {
+.header-nav__item_login {
     @media (max-width: $tablet-width) {
         visibility: hidden;
     }
@@ -68,6 +67,10 @@
 .header-nav__item_login,
 .header-nav__item_basket {
     padding-left: 20px;
+
+    @media (max-width: $tablet-width) {
+        padding-left: 0px;
+    }
 }
 
 

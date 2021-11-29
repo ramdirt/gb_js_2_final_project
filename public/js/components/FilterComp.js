@@ -9,5 +9,5 @@ Vue.component('filter-el', {
                 <button type="submit" class="btn-search">
                     <i class="fas fa-search"></i>
                 </button>
-            </form>`
+                </form>`
 })
