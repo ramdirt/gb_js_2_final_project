@@ -8,7 +8,6 @@ const product = require('./product');
 
 app.use(express.json());
 app.use('/', express.static('public'));
-app.use('/js', express.static('public'));
 app.use('/api/cart', cart);
 app.use('/api/product/', productAPI);
 app.use('/product/', product);
